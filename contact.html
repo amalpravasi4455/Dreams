@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams Builders | Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        
+        .logo-svg:hover { transform: rotate(180deg); }
+        .logo-svg { transition: transform 0.5s ease; }
+        
+        .glass-nav {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-neutral-950 text-white selection:bg-rose-600 w-full overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 py-4 transition-all duration-300 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="relative w-10 h-10 flex items-center justify-center">
+                    <svg viewBox="0 0 100 100" class="logo-svg absolute inset-0 w-full h-full">
+                        <path d="M20 10 L80 10 L90 50 L80 90 L20 90 Z" fill="none" stroke="#e11d48" stroke-width="8" />
+                    </svg>
+                    <span class="text-2xl font-black text-white z-10">D</span>
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="text-xl font-bold tracking-tighter text-white uppercase">Dreams</span>
+                    <span class="text-xs font-bold text-rose-600 tracking-widest uppercase">Builders</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-sm font-medium hover:text-rose-600 transition-colors">Home</a>
+                <a href="about.html" class="text-sm font-medium hover:text-rose-600 transition-colors">About</a>
+                <a href="services.html" class="text-sm font-medium hover:text-rose-600 transition-colors">Services</a>
+                <a href="gallery.html" class="text-sm font-medium hover:text-rose-600 transition-colors">Gallery</a>
+                <a href="contact.html" class="text-rose-600 text-sm font-medium transition-colors">Contact</a>
+                <a href="contact.html" class="bg-rose-600 hover:bg-rose-700 text-white px-6 py-2 rounded-full text-sm font-bold transition-all transform hover:scale-105">
+                    Get Quote
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-neutral-900 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 text-center reveal">
+            <h1 class="text-5xl md:text-7xl font-black mb-4 uppercase tracking-tight">Contact <span class="text-rose-600">Us</span></h1>
+            <p class="text-neutral-400 max-w-2xl mx-auto text-lg">Let's discuss your next visionary project and bring your dreams to reality.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-24 bg-white text-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-neutral-950 rounded-[2rem] overflow-hidden flex flex-col md:flex-row shadow-2xl reveal">
+                
+                <div class="md:w-2/5 p-12 bg-rose-600 text-white flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute -right-20 -bottom-20 opacity-10 pointer-events-none">
+                        <i class="fa-solid fa-comments text-9xl"></i>
+                    </div>
+                    
+                    <div class="relative z-10">
+                        <h3 class="text-4xl font-black mb-8 leading-tight">Let's Build Your Future Together.</h3>
+                        <p class="mb-10 text-white/80 leading-relaxed text-sm">Reach out to our expert team for consultations, estimates, and project inquiries. We usually respond within 24 hours.</p>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-map-pin"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Headquarters</h4>
+                                    <p class="text-white/80 text-sm">123 Construction Ave, Suite 400<br>New York, NY 10001</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Phone</h4>
+                                    <p class="text-white/80 text-sm">+1 (555) 000-8888</p>
+                                    <p class="text-white/80 text-sm">+1 (555) 000-8889</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Email</h4>
+                                    <p class="text-white/80 text-sm">hello@dreambuilders.com</p>
+                                    <p class="text-white/80 text-sm">careers@dreambuilders.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4 mt-12 relative z-10">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-rose-600 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-rose-600 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-rose-600 transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-rose-600 transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="md:w-3/5 p-12 lg:p-16 bg-neutral-950 text-white">
+                    <h3 class="text-2xl font-bold mb-8 uppercase tracking-widest text-rose-600">Send an Inquiry</h3>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs uppercase tracking-widest text-neutral-400 font-bold">First Name *</label>
+                                <input name="firstname" type="text" required class="w-full bg-white/5 border border-white/10 rounded-lg p-4 focus:border-rose-600 focus:bg-white/10 outline-none transition-all placeholder:text-neutral-600" placeholder="John">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs uppercase tracking-widest text-neutral-400 font-bold">Last Name *</label>
+                                <input name="lastname" type="text" required class="w-full bg-white/5 border border-white/10 rounded-lg p-4 focus:border-rose-600 focus:bg-white/10 outline-none transition-all placeholder:text-neutral-600" placeholder="Doe">
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <label class="text-xs uppercase tracking-widest text-neutral-400 font-bold">Email Address *</label>
+                            <input name="email" type="email" required class="w-full bg-white/5 border border-white/10 rounded-lg p-4 focus:border-rose-600 focus:bg-white/10 outline-none transition-all placeholder:text-neutral-600" placeholder="john.doe@example.com">
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <label class="text-xs uppercase tracking-widest text-neutral-400 font-bold">Service Required</label>
+                            <select class="w-full bg-white/5 border border-white/10 rounded-lg p-4 focus:border-rose-600 focus:bg-white/10 outline-none transition-all text-neutral-300 appearance-none">
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="construction" class="bg-neutral-900 text-white">Building Construction</option>
+                                <option value="3d" class="bg-neutral-900 text-white">3D Plan Making</option>
+                                <option value="architecture" class="bg-neutral-900 text-white">Architecture Works</option>
+                                <option value="renovation" class="bg-neutral-900 text-white">House Renovation</option>
+                                <option value="interior" class="bg-neutral-900 text-white">Interior Design</option>
+                                <option value="other" class="bg-neutral-900 text-white">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <label class="text-xs uppercase tracking-widest text-neutral-400 font-bold">Project Details *</label>
+                            <textarea name="message" rows="5" required class="w-full bg-white/5 border border-white/10 rounded-lg p-4 focus:border-rose-600 focus:bg-white/10 outline-none transition-all placeholder:text-neutral-600 resize-none" placeholder="Tell us about your project vision, timeline, and rough budget..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-rose-600 hover:bg-rose-700 text-white py-4 rounded-lg font-black tracking-widest transition-all mt-4 hover:shadow-[0_0_20px_rgba(225,29,72,0.4)]">
+                            SEND MESSAGE NOW
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-white/5 text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
+            <p class="text-neutral-600 text-sm mb-6">© 2024 Dreams Builders. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal();
+    </script>
+</body>
+</html>

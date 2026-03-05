@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams Builders | Our Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        
+        .logo-svg:hover { transform: rotate(180deg); }
+        .logo-svg { transition: transform 0.5s ease; }
+        
+        .glass-nav {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: #e11d48;
+            box-shadow: 0 20px 40px -10px rgba(225, 29, 72, 0.15);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-neutral-950 text-white selection:bg-rose-600 w-full overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 py-4 transition-all duration-300 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="relative w-10 h-10 flex items-center justify-center">
+                    <svg viewBox="0 0 100 100" class="logo-svg absolute inset-0 w-full h-full">
+                        <path d="M20 10 L80 10 L90 50 L80 90 L20 90 Z" fill="none" stroke="#e11d48" stroke-width="8" />
+                    </svg>
+                    <span class="text-2xl font-black text-white z-10">D</span>
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="text-xl font-bold tracking-tighter text-white uppercase">Dreams</span>
+                    <span class="text-xs font-bold text-rose-600 tracking-widest uppercase">Builders</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-sm font-medium hover:text-rose-600 transition-colors">Home</a>
+                <a href="about.html" class="text-sm font-medium hover:text-rose-600 transition-colors">About</a>
+                <a href="services.html" class="text-rose-600 text-sm font-medium transition-colors">Services</a>
+                <a href="gallery.html" class="text-sm font-medium hover:text-rose-600 transition-colors">Gallery</a>
+                <a href="contact.html" class="text-sm font-medium hover:text-rose-600 transition-colors">Contact</a>
+                <a href="contact.html" class="bg-rose-600 hover:bg-rose-700 text-white px-6 py-2 rounded-full text-sm font-bold transition-all transform hover:scale-105">
+                    Get Quote
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-neutral-900 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 text-center reveal">
+            <h1 class="text-5xl md:text-7xl font-black mb-4 uppercase tracking-tight">Our <span class="text-rose-600">Services</span></h1>
+            <p class="text-neutral-400 max-w-2xl mx-auto text-lg">Comprehensive solutions for your architectural, construction, and design needs.</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="service-card group p-10 bg-neutral-950 border border-white/5 transition-all duration-500 rounded-2xl cursor-pointer reveal">
+                    <i class="fa-solid fa-building text-4xl text-rose-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-2xl font-bold mb-4">Building Construction</h4>
+                    <p class="text-neutral-400 mb-6 leading-relaxed">From foundation to finish, we build residential and commercial structures that stand the test of time, utilizing the finest materials and masterful craftsmanship.</p>
+                </div>
+
+                <div class="service-card group p-10 bg-neutral-950 border border-white/5 transition-all duration-500 rounded-2xl cursor-pointer reveal">
+                    <i class="fa-solid fa-layer-group text-4xl text-rose-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-2xl font-bold mb-4">3D Plan Making</h4>
+                    <p class="text-neutral-400 mb-6 leading-relaxed">Visualize your dream before the first brick is laid with high-end 3D modeling and photorealistic rendering that brings blueprints to life.</p>
+                </div>
+
+                <div class="service-card group p-10 bg-neutral-950 border border-white/5 transition-all duration-500 rounded-2xl cursor-pointer reveal">
+                    <i class="fa-solid fa-compass text-4xl text-rose-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-2xl font-bold mb-4">Architecture Works</h4>
+                    <p class="text-neutral-400 mb-6 leading-relaxed">Modern, sustainable, and aesthetic designs tailored to your lifestyle and the surrounding environment, striking the perfect balance between form and function.</p>
+                </div>
+
+                <div class="service-card group p-10 bg-neutral-950 border border-white/5 transition-all duration-500 rounded-2xl cursor-pointer reveal">
+                    <i class="fa-solid fa-file-signature text-4xl text-rose-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-2xl font-bold mb-4">Legal Documentation</h4>
+                    <p class="text-neutral-400 mb-6 leading-relaxed">Hassle-free permit processing, zoning approvals, and legal compliance for all construction types, ensuring your project meets all regulatory standards.</p>
+                </div>
+
+                <div class="service-card group p-10 bg-neutral-950 border border-white/5 transition-all duration-500 rounded-2xl cursor-pointer reveal">
+                    <i class="fa-solid fa-hammer text-4xl text-rose-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-2xl font-bold mb-4">House Renovation</h4>
+                    <p class="text-neutral-400 mb-6 leading-relaxed">Transforming old spaces into modern masterpieces with precision engineering, seamlessly integrating new additions with existing structures.</p>
+                </div>
+
+                <div class="service-card group p-10 bg-neutral-950 border border-white/5 transition-all duration-500 rounded-2xl cursor-pointer reveal">
+                    <i class="fa-solid fa-couch text-4xl text-rose-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-2xl font-bold mb-4">Interior Design</h4>
+                    <p class="text-neutral-400 mb-6 leading-relaxed">Curated interiors that reflect your personality and optimize space, creating environments that are both exceptionally beautiful and highly functional.</p>
+                </div>
+
+                <div class="service-card group p-10 bg-neutral-950 border border-white/5 transition-all duration-500 rounded-2xl cursor-pointer reveal">
+                    <i class="fa-solid fa-leaf text-4xl text-rose-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-2xl font-bold mb-4">Green Building Solutions</h4>
+                    <p class="text-neutral-400 mb-6 leading-relaxed">Sustainable construction practices incorporating passive cooling, solar integration, and eco-friendly materials to reduce carbon footprint.</p>
+                </div>
+                
+                <div class="service-card group p-10 bg-neutral-950 border border-white/5 transition-all duration-500 rounded-2xl cursor-pointer reveal">
+                    <i class="fa-solid fa-helmet-safety text-4xl text-rose-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-2xl font-bold mb-4">Project Management</h4>
+                    <p class="text-neutral-400 mb-6 leading-relaxed">End-to-end supervision and orchestration of construction projects, guaranteeing on-time delivery and strict adherence to defined budgets.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-rose-600 text-white text-center">
+        <div class="max-w-4xl mx-auto px-6 reveal">
+            <h2 class="text-4xl font-black mb-6 uppercase">Ready to Start Your Project?</h2>
+            <p class="text-xl mb-10 opacity-90">Let our experts guide you through every step of your construction journey.</p>
+            <a href="contact.html" class="bg-black text-white hover:bg-neutral-900 px-10 py-4 rounded-lg font-bold text-lg inline-block transition-transform transform hover:-translate-y-1 shadow-xl">
+                Get a Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-white/5 text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
+            <p class="text-neutral-600 text-sm mb-6">© 2024 Dreams Builders. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="text-neutral-600 hover:text-rose-600 transition-colors text-xl"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-neutral-600 hover:text-rose-600 transition-colors text-xl"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-neutral-600 hover:text-rose-600 transition-colors text-xl"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-neutral-600 hover:text-rose-600 transition-colors text-xl"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal();
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams Builders | Architectural Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .logo-svg:hover { transform: rotate(180deg); transition: transform 0.5s ease; }
+        .glass-nav { background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px); }
+        .hero-gradient { background: linear-gradient(90deg, #000 0%, rgba(0,0,0,0.7) 50%, transparent 100%); }
+        .service-card:hover { transform: translateY(-10px); border-color: #e11d48; transition: all 0.3s ease; }
+        .gallery-img { filter: grayscale(100%); transition: all 0.5s ease; }
+        .gallery-item:hover .gallery-img { filter: grayscale(0%); transform: scale(1.1); }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-neutral-950 text-white selection:bg-rose-600">
+    <nav class="fixed w-full z-50 py-4 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.php" class="flex items-center gap-2 group">
+                <div class="relative w-10 h-10 flex items-center justify-center">
+                    <svg viewBox="0 0 100 100" class="logo-svg absolute inset-0 w-full h-full">
+                        <path d="M20 10 L80 10 L90 50 L80 90 L20 90 Z" fill="none" stroke="#e11d48" stroke-width="8" />
+                    </svg>
+                    <span class="text-2xl font-black text-white z-10">D</span>
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="text-xl font-bold tracking-tighter text-white uppercase">Dreams</span>
+                    <span class="text-xs font-bold text-rose-600 tracking-widest uppercase">Builders</span>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.php" class="text-sm font-medium hover:text-rose-600 transition-colors">Home</a>
+                <a href="about.php" class="text-sm font-medium hover:text-rose-600 transition-colors">About</a>
+                <a href="services.php" class="text-sm font-medium hover:text-rose-600 transition-colors">Services</a>
+                <a href="gallery.php" class="text-sm font-medium hover:text-rose-600 transition-colors">Gallery</a>
+                <a href="contact.php" class="text-sm font-medium hover:text-rose-600 transition-colors">Contact</a>
+                <button class="bg-rose-600 hover:bg-rose-700 text-white px-6 py-2 rounded-full text-sm font-bold transition-all transform hover:scale-105">
+                    Get Quote
+                </button>
+            </div>
+        </div>
+    </nav>
